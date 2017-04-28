@@ -1,0 +1,84 @@
+/* To use Google Fonts:
+
+font-family: 'Open Sans', sans-serif;
+font-family: 'Merriweather', serif;
+
+*/
+
+/*  H T M L  T A G S  */
+
+body {
+
+	background-color: #f8f8f8;
+
+}
+
+h1 {
+
+	font-family: 'Merriweather', serif;
+	font-weight: 800;
+
+}
+
+h2 {
+
+}
+
+h3 {
+
+}
+
+p {
+
+	font-family: 'Open Sans', sans-serif;
+
+}
+
+a {
+
+	display: inline-block;
+	padding: 5px 10px;
+
+}
+
+/*  C L A S S E S  */
+
+.wine {
+
+	width: 700px;
+	height: 250px;
+
+}
+
+.bottle {
+
+	width: 250px;
+	height: 250px;
+	overflow: hidden;
+	margin: 0px;
+
+}
+
+.info {
+
+	background-color: #c0ffee;
+	width: 450px;
+	height: 200px;
+
+}
+
+.cart-container {
+
+	width: 450px;
+	height: 50px;
+	background-color: #bada55;
+
+}
+
+.cart-item {
+
+	display: inline;
+
+}
+
+/*  I D S  */
