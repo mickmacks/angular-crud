@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 
 <html lang="en" ng-app="wineApp">
   	
@@ -7,7 +7,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title></title>
+    <title>Wine Country</title>
 
 	<!-- SCRIPTS -->
 
@@ -29,7 +29,7 @@
 
 	    <script src="../app/app.js"></script>
 
-	    <script src="/controllers/controller1.js"></script>
+	    <script src="../app/controllers/WinesIndexController.js"></script>
 
     <!-- STYLESHEETS -->
 
@@ -51,7 +51,26 @@
 
 	<body>
 		
-	<h1>HELLO, WORLD #{{4+4}}</h1>
+		<div id="hero">
+
+		<h1>HELLO, WORLD #{{4+4}}</h1>
+
+		</div>
+
+		<div ng-view>
+			
+		<div ng-repeat="wine in winesIndexCtrl.wines | orderBy: 'name' " class="row">
+	
+
+			<div class='bottle'>
+
+				<img src="{{wine.image}}" alt="Wine Image">
+
+			</div>
+
+		</div>
+
+		</div>
 
 	</body>
 

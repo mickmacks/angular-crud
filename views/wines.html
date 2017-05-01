@@ -1,0 +1,42 @@
+<div class="container">
+	<div class="row wine">
+		<div class="col-md-10 col-md-offset-1">
+			
+			<div ng-repeat="wine in winesIndexCtrl.wines | orderBy: 'name' " class="row">
+	
+
+			<div class='bottle'>
+
+				<img src="{{wine.image}}" alt="Wine Image">
+
+			</div>
+
+			<div class='info'>
+
+				<h3>Wine Name</h3>
+
+				<ul>
+
+					<li>Wine country or something</li>
+					<li>Wine type or something</li>
+					<li>Wine makers or something</li>
+					<li>Wine review or something</li>
+
+				</ul>
+
+				<button>DEL</button>
+				<button>EDIT</button>
+
+			</div>
+
+			<div class="cart-container">
+
+				<h4 class="cart-item">Quantity: 3</h4>
+				<h4 class="cart-item">Price: $64.99</h4>
+				<button class="cart-item">ADD</button>
+
+			</div>
+
+		</div>
+	</div>
+</div>
