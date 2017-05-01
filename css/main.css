@@ -20,11 +20,33 @@ h1 {
 
 }
 
-h2 {
+h2 {}
+
+h3 {}
+
+h4 {
+
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 1.25px
 
 }
 
-h3 {
+h5 {
+
+	text-transform: uppercase;
+	font-weight: normal;
+	font-size: 16px;
+	letter-spacing: 1px
+	padding-top: 10px;
+
+}
+
+img {
+
+	margin: 0 17%;
+	max-width:100%;
+	max-height:100%;
 
 }
 
@@ -43,41 +65,69 @@ a {
 
 /*  C L A S S E S  */
 
+.card-btn {
+
+	border-radius: 40px;
+	height: 40px;
+	width: 40px;
+	float: right;
+	margin: 10px 10px 10px 0px;
+
+}
+
 .wine {
 
 	width: 700px;
-	height: 250px;
+	height: 350px;
+	margin: 0px 0px 0px 0px;
+	padding: 0px;
 
 }
 
 .bottle {
 
-	width: 250px;
-	height: 250px;
+	background-color: white;
+	width: 300px;
+	height: 300px;
 	overflow: hidden;
 	margin: 0px;
+	padding: 40px 0px;
+	position: absolute;
+	display: inline-block;
+	box-sizing: border-box;
 
 }
 
 .info {
 
-	background-color: #c0ffee;
+	background-color: #fff8e1;
 	width: 450px;
-	height: 200px;
+	height: 225px;
+	position: relative;
+	display: inline-block;
+	float: right;
+	margin: 0px;
+	padding: 0px 25px;
 
 }
 
 .cart-container {
 
 	width: 450px;
-	height: 50px;
-	background-color: #bada55;
+	height: 75px;
+	background-color: #ffccbc;
+	position: relative;
+	display: inline-block;
+	float: right;
+	margin: 0px 0px 40px 0px;
+	padding: 20px 0px 0px 30px;
 
 }
 
 .cart-item {
 
 	display: inline;
+	padding-right: 30px;
 
 }
 

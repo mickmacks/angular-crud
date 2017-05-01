@@ -1,6 +1,5 @@
 <div class="container">
 	<div class="row wine">
-		<div class="col-md-10 col-md-offset-1">
 			
 			<div ng-repeat="wine in winesIndexCtrl.wines | orderBy: 'name' " class="row">
 	
@@ -13,30 +12,30 @@
 
 			<div class='info'>
 
-				<h3>Wine Name</h3>
+				<button type="button" class="card-btn btn btn-danger">
+ 					<span class="glyphicon glyphicon-remove"></span>
+				</button>
 
-				<ul>
+				<button type="button" class="card-btn btn btn-warning">
+ 					<span class="glyphicon glyphicon-pencil"></span>
+				</button>
 
-					<li>Wine country or something</li>
-					<li>Wine type or something</li>
-					<li>Wine makers or something</li>
-					<li>Wine review or something</li>
+				<h3>{{wine.name}}</h3>
 
-				</ul>
-
-				<button>DEL</button>
-				<button>EDIT</button>
+				<h4>{{wine.country}}, {{wine.year}}</h4>
+				<p>{{wine.description}}</p>
 
 			</div>
 
 			<div class="cart-container">
 
-				<h4 class="cart-item">Quantity: 3</h4>
-				<h4 class="cart-item">Price: $64.99</h4>
-				<button class="cart-item">ADD</button>
+				<h5 class="cart-item">Quantity: 3</h5>
+				<h5 class="cart-item">Price: ${{wine.price}}.00</h5>
+				<button type="button" class="btn btn-info">
+ 					<span class="glyphicon glyphicon-shopping-cart"></span> ADD
+				</button>
 
 			</div>
 
-		</div>
 	</div>
 </div>
