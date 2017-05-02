@@ -4,36 +4,30 @@
 			<div ng-repeat="wine in winesIndexCtrl.wines | orderBy: 'name' " class="row">
 	
 
-			<div class='bottle'>
+				<div class='bottle'>
 
-				<img src="{{wine.image}}" alt="Wine Image">
+					<img src="{{wine.image}}" alt="Wine Image">
 
-			</div>
+				</div>
 
-			<div class='info'>
+				<div class='info'>
 
-				<button type="button" class="card-btn btn btn-danger">
- 					<span class="glyphicon glyphicon-remove"></span>
-				</button>
+					<h3><a ng-href="/wines/{{wine._id}}">{{wine.name}}</a></h3>
 
-				<button type="button" class="card-btn btn btn-warning">
- 					<span class="glyphicon glyphicon-pencil"></span>
-				</button>
+					<h4>{{wine.country}}, {{wine.year}}</h4>
+					<p>{{wine.description}}</p>
 
-				<h3>{{wine.name}}</h3>
+				</div>
 
-				<h4>{{wine.country}}, {{wine.year}}</h4>
-				<p>{{wine.description}}</p>
+				<div class="cart-container">
 
-			</div>
+					<h5 class="cart-item">Quantity: 3</h5>
+					<h5 class="cart-item">Price: ${{wine.price}}.00</h5>
+					<button type="button" class="btn btn-info">
+	 					<span class="glyphicon glyphicon-shopping-cart"></span> ADD
+					</button>
 
-			<div class="cart-container">
-
-				<h5 class="cart-item">Quantity: 3</h5>
-				<h5 class="cart-item">Price: ${{wine.price}}.00</h5>
-				<button type="button" class="btn btn-info">
- 					<span class="glyphicon glyphicon-shopping-cart"></span> ADD
-				</button>
+				</div>
 
 			</div>
 

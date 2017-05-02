@@ -1,12 +1,10 @@
 angular
   .module('wineApp')
-  .controller('WinesIndexController', WinesIndexController);
+  .controller('winesIndexController', winesIndexController);
 
-WinesIndexController.$inject = ['$http'];
-function WinesIndexController ($http) {
-
-  console.log('working Index Controller fx');
-
+winesIndexController.$inject = ['$http'];
+function winesIndexController ($http) {
+  
   var vm = this;
 
   $http({

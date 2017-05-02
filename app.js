@@ -10,17 +10,14 @@ function config ($routeProvider, $locationProvider) {
   $routeProvider
     .when('/', {
       templateUrl: '../views/wines.html',
-      controller: 'winesIndexController',
-      controllerAs: 'winesIndexCtrl'
+      controllerAs: 'winesIndexCtrl',
+      controller: 'winesIndexController'
     })
     .when('/wines/:_id', {
       templateUrl: '../views/wine.html',
-      controller: 'wineShowController',
-      controllerAs: 'wineShowCtrl'
+      controller: 'wineShowCtrl',
+      controllerAs: 'wineShowController'
     })
-    .otherwise({
-      redirectTo: '/'
-    });
 
     $locationProvider.html5Mode({
       enabled: true,

@@ -1,0 +1,38 @@
+<div class="container">
+	<div class="row wine">	
+
+			<div class='bottle'>
+
+				<img src="{{wineShowCtrl.wine.image}}" alt="Wine Image">
+
+			</div>
+
+			<div class='info'>
+
+				<button type="button" class="card-btn btn btn-danger" ng-click="wineShowCtrl.deletewine(wineShowCtrl.wine)">
+ 					<span class="glyphicon glyphicon-remove"></span>
+				</button>
+
+				<button type="button" class="card-btn btn btn-warning">
+ 					<span class="glyphicon glyphicon-pencil"></span>
+				</button>
+
+				<h3>{{wineShowCtrl.wine.name}}</h3>
+
+				<h4>{{wineShowCtrl.wine.country}}, {{wineShowCtrl.wine.year}}</h4>
+				<p>{{wineShowCtrl.wine.description}}</p>
+
+			</div>
+
+			<div class="cart-container">
+
+				<h5 class="cart-item">Quantity: 3</h5>
+				<h5 class="cart-item">Price: ${{wine.price}}.00</h5>
+				<button type="button" class="btn btn-info">
+ 					<span class="glyphicon glyphicon-shopping-cart"></span> ADD
+				</button>
+
+			</div>
+
+	</div>
+</div>
